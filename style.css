@@ -1,0 +1,67 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Grey500: hsl(234, 12%, 34%);
+  --Grey400: hsl(212, 6%, 44%);
+  --White: hsl(0, 0%, 100%);
+  --Fontsize: 15px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: Poppins;
+  font-size: var(--Fontsize);
+  color: var(--Grey500);
+  background-color: var(--White);
+  padding: 40px;
+}
+
+h1 {
+    font-size:1.4rem;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--White);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 30px;
+  text-align: right;
+  margin: 10px;
+
+  h2,
+  p {
+    text-align: left;
+  }
+  img {
+    margin-top: 30px;
+  }
+}
+
+.vermelho {
+  border-top: 10px solid var(--Red);
+}
+.azul {
+  border-top: 10px solid var(--Blue);
+}
+.amarelo {
+  border-top: 10px solid var(--Orange);
+}
+
+.verde {
+  border-top: 10px solid var(--Cyan);
+}
